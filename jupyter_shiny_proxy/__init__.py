@@ -32,6 +32,7 @@ def setup_shiny():
 
     return {
         'command': _get_shiny_cmd,
+        'new_browser_tab': True,
         'launcher_entry': {
             'title': 'Shiny',
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'shiny.svg')
